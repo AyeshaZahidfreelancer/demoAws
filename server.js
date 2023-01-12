@@ -14,7 +14,12 @@ connection.connect((err) => {
 
 var express = require("express");
 var app = express();
+app.route("/").get(demoNoData);
 app.route("/mysql").get(demoData);
+function demoNoData(req, res) {
+  console.log("hellooo");
+  res.send("hello");
+}
 function demoData(req, res) {
   var sql = "Select * from shows";
   connection.query(sql, function (err, result) {
