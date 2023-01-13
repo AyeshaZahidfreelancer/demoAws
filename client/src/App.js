@@ -5,7 +5,7 @@ import axios from "axios";
 function App() {
   useEffect(() => {
     console.log("heeeloooo");
-    axios.get(`http://localhost:3000/`).then((res) => {
+    axios.get(`http://3.7.66.46/mysql`).then((res) => {
       console.log("ress::", res);
     });
     //eslint-disable-next-line
