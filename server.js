@@ -16,7 +16,7 @@ var express = require("express");
 var cors = require("cors");
 
 var app = express();
-// app.use(cors());
+app.use(cors());
 app.route("/").get(demoNoData);
 app.route("/mysql").get(demoData);
 function demoNoData(req, res) {
