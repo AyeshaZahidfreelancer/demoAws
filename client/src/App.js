@@ -5,9 +5,9 @@ import axios from "axios";
 function App() {
   useEffect(() => {
     console.log("heeeloooo");
-    // axios.get(`http://3.7.66.46/mysql`).then((res) => {
-    //   console.log("ress::", res);
-    // });
+    axios.get(`http://3.7.66.46/mysql`).then((res) => {
+      console.log("ress::", res);
+    });
     //eslint-disable-next-line
   }, []);
   return (
