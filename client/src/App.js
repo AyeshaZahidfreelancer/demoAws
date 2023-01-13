@@ -4,7 +4,7 @@ import "./App.css";
 import axios from "axios";
 function App() {
   useEffect(() => {
-    console.log("heeeloooo");
+    console.log("heeeloooofjdsklfjsdklfjdsklfjdsf");
     axios.get(`http://3.7.66.46/mysql`).then((res) => {
       console.log("ress::", res);
     });
