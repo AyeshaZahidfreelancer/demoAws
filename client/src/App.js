@@ -4,10 +4,15 @@ import "./App.css";
 import axios from "axios";
 function App() {
   useEffect(() => {
-    console.log("heeeloooofjdsklfjsdklfjdsklfjdsf");
-    axios.get(`/api/mysql`).then((res) => {
-      console.log("ress::", res);
-    });
+    console.log("heee heheehhehehe");
+    axios
+      .get(`/api/mysql`)
+      .then((res) => {
+        console.log("ress::", res);
+      })
+      .catch((err) => {
+        console.log("error agya hy janiii::", err);
+      });
     //eslint-disable-next-line
   }, []);
   return (

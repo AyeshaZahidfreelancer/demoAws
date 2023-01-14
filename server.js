@@ -21,7 +21,7 @@ app.route("/").get(demoNoData);
 app.route("/mysql").get(demoData);
 function demoNoData(req, res) {
   console.log("hellooos");
-  res.send("hell odhasjkdhasudfhasjkdhasd");
+  res.send("hell from api");
 }
 function demoData(req, res) {
   var sql = "Select * from shows";
