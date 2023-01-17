@@ -1,11 +1,18 @@
 var mysql = require("mysql");
 var connection = mysql.createConnection({
-  host: "mysql.ckern25chvy6.ap-south-1.rds.amazonaws.com",
+  host: "65.2.57.4",
   port: "3306",
-  user: "admin",
-  password: "Nauman-12345",
-  database: "movie_review",
+  user: "root",
+  password: "root@123",
+  database: "buggaz",
 });
+// var connection = mysql.createConnection({
+//   host: "mysql.ckern25chvy6.ap-south-1.rds.amazonaws.com",
+//   port: "3306",
+//   user: "admin",
+//   password: "Nauman-12345",
+//   database: "movie_review",
+// });
 
 connection.connect((err) => {
   if (err) throw err;
